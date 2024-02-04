@@ -6,16 +6,9 @@ import Content from './libs/ContentComp';
 function App() {
   return (
     <div>
-    <Header />
-    hui huihui
-    huihui
-
-    hui hui   hui hhuhi hgdfuhsdfg 
-
-    sdfg sdfg sdfg sdfg sdfg sdfg dsfg asd
-
-    rqwerqwerqwe
-    <Content />
+      <Header />
+      <Header />
+      <Content />
     </div>
   );
 }
