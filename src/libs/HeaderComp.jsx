@@ -1,9 +1,10 @@
+import './../css/HeaderComp.css'
 import logo from './../logo.svg';
 
 function Header() {
   return (
-    <div>
-      <img src={logo} className="App-logo" alt="logo" />
+    <div className='Header'>
+      <img src={logo} className="Header__logo" alt="logo" />
       <text><b>Tarkov Travel Guide</b></text>
     </div>
   );
