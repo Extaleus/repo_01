@@ -1,18 +1,17 @@
-import SearchBox from "./SearchBoxComp";
+import './../css/ContentComp.css';
+import SearchBox from './SearchBoxComp';
+import Filters from './FiltersComp';
+import InGameItems from './InGameItems';
 
 function Content() {
   return (
-    <div>
+    <div className='Content'>
       <div>
-        <b>Items Tracker</b>
+        <h1>Items Tracker</h1>
       </div>
       <SearchBox />
-      <div>
-        Filters(Buttons)
-      </div>
-      <div>
-        <b>Items</b>
-      </div>
+      <Filters />
+      <InGameItems />
     </div>
   );
 }
