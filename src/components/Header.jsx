@@ -1,11 +1,11 @@
-import './../css/HeaderComp.css';
+import './../css/Header.css';
 import logo from './../logo.svg';
 
 function Header() {
   return (
     <div className='Header'>
       <div className='Brand'>
-        <img src={logo} className="Brand__logo" />
+        <img src={logo} className="Brand__logo" alt='b__logo' />
         <b className='Brand__text'>Tarkov Travel Guide</b>
       </div>
       <div className='Clocks'>

@@ -1,6 +1,6 @@
-import './../css/ContentComp.css';
-import SearchBox from './SearchBoxComp';
-import Filters from './FiltersComp';
+import './../css/Content.css';
+import SearchBox from './SearchBox';
+import Filters from './Filters';
 import InGameItems from './InGameItems';
 
 function Content() {
