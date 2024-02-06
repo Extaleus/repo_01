@@ -1,0 +1,12 @@
+.Content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+.content-title{
+  color: #000;
+}
+
