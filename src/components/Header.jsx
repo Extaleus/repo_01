@@ -1,5 +1,10 @@
 import './../css/Header.css';
 import logo from './../logo.svg';
+import { Link } from 'react-router-dom';
+
+const CustomLink = ({name, href, icon}) => {
+  return <span>{icon}<Link to={href}>{name}</Link></span>
+}
 
 function Header() {
   return (
@@ -12,7 +17,12 @@ function Header() {
         <b className='Clocks__Time'>Time</b>
         <b className='Clocks__Icon'>Icon</b>
       </div>
-      <div className='dropdown_Maps'>
+      <CustomLink name={'Maps'} href={'maps'} />
+      <CustomLink name={'Progression'} href={'progs'} />
+      <CustomLink name={'Calculators'} href={'calcs'} />
+      <CustomLink name={'Guns/Ammo'} href={'guns-ammo'} />
+
+      {/* <div className='dropdown_Maps'>
         <b>Maps</b>
       </div>
       <div className='dropdown_Progression'>
@@ -23,7 +33,7 @@ function Header() {
       </div>
       <div className='dropdown_Guns_Ammo'>
         <b>Guns/Ammo</b>
-      </div>
+      </div> */}
       <div className='dropdown_More'>
         <b>More</b>
       </div>
