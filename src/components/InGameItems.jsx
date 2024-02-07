@@ -1,6 +1,6 @@
 function InGameItems() {
   return (
-    <div className='InGameItems'>
+    <div className="InGameItems">
       <b>Items</b>
     </div>
   );
