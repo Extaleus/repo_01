@@ -1,0 +1,52 @@
+.Header {
+  background-color: rgb(200, 200, 200);
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Brand {
+  display: flex;
+  /* flex-basis: content; */
+  align-items: center;
+  /* justify-content: left; */
+}
+
+.Brand__logo {
+  padding: 2%;
+  height: 5vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Brand__logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Brand__text {
+  font-size: calc(10px + 2vmin);
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+}
+
+.Menu {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+.Login {
+  display: flex;
+}

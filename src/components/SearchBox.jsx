@@ -1,6 +1,6 @@
 function SearchBox() {
   return (
-    <div>
+    <div className="Search">
       Search Box
       <input></input>
     </div>

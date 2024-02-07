@@ -1,13 +1,14 @@
 import './App.css';
-import SomeInfo from './libs/SomeInfo';
-import Header from './libs/HeaderComp';
-import Content from './libs/ContentComp';
+import Header from './components/Header';
+import Content from './components/Content';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
-    <Header />
-    <Content />
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
