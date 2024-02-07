@@ -1,9 +1,10 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
+import React from "react";
 
 export const Maps = () => {
-  return (<div>
-    Maps
-
-    </div>)
-}
+  return (
+    <div>
+      <div>Maps</div>
+      <div>More Info about maps</div>
+    </div>
+  );
+};

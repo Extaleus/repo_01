@@ -1,13 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {
-  RouterProvider, createBrowserRouter,
-} from "react-router-dom";
-import { Maps } from './components/content/Maps/Maps';
-import {Content} from './components/content/Content';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+import { Maps } from "./components/content/Maps/Maps";
+import { Content } from "./components/content/Content";
+import { Progression } from "./components/content/Progression/Progression";
+import { Calculators } from "./components/content/Calculators/Calculators";
+import { GunsAmmo } from "./components/content/Guns-Ammo/Guns-Ammo";
+import { More } from "./components/content/More/More";
 
 const router = createBrowserRouter([
   {
@@ -15,19 +19,35 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '',
-        element: <Content />
+        path: "",
+        element: <Content />,
       },
       {
         path: "maps",
-        element: <Maps />
-      }
+        element: <Maps />,
+      },
+      {
+        path: "progression",
+        element: <Progression />,
+      },
+      {
+        path: "calcs",
+        element: <Calculators />,
+      },
+      {
+        path: "guns-ammo",
+        element: <GunsAmmo />,
+      },
+      {
+        path: "moreinfo",
+        element: <More />,
+      },
     ],
   },
-  
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
