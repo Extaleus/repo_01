@@ -1,7 +1,7 @@
 function SearchBox() {
   return (
     <div className="Search">
-      Search Box
+      <b>Search Box</b>
       <input></input>
     </div>
   );

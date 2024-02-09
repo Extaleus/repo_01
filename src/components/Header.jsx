@@ -1,6 +1,7 @@
 import "./../css/Header.css";
 import logo from "./../logo.svg";
 import { Link } from "react-router-dom";
+import { Dropdown } from "./DropdownButton/DropdownButton";
 
 const CustomLink = ({ name, href, icon }) => {
   return (
@@ -11,19 +12,27 @@ const CustomLink = ({ name, href, icon }) => {
   );
 };
 
+const MAPS = [
+  { name: "Завод", href: "" },
+  { name: "Лес" },
+  { name: "Лес" },
+  { name: "Лес" },
+  { name: "Лес" },
+  { name: "Лес" },
+];
+
 function Header() {
   return (
-    <div className="Header">
+    <header className="Header">
       <div className="Brand">
         <img src={logo} className="Brand__logo" alt="b__logo" />
         <b className="Brand__text">Tarkov Travel Guide</b>
       </div>
-
       <div className="Clocks">
         <b className="Clocks__Time">Time</b>
         <b className="Clocks__Icon">Icon</b>
       </div>
-
+      <Dropdown name={"Карты"} items={MAPS} />
       <CustomLink name={"Maps"} href={"maps"} />
       <CustomLink name={"Progression"} href={"progression"} />
       <CustomLink name={"Calculators"} href={"calcs"} />
@@ -41,7 +50,7 @@ function Header() {
           <b> Profile</b>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
