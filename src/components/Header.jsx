@@ -1,9 +1,20 @@
 import "./../css/Header.css";
 import logo from "./../logo.svg";
+import { Dropdown } from "./DropdownButton/DropdownButton";
+// import BDropdown from "./DropdownButton/DropdownButton";
+
+const MAPS = [
+  { name: "Завод", href: "" },
+  { name: "Лес" },
+  { name: "Лес" },
+  { name: "Лес" },
+  { name: "Лес" },
+  { name: "Лес" },
+];
 
 function Header() {
   return (
-    <div className="Header">
+    <header className="Header">
       <div className="Brand">
         <img src={logo} className="Brand__logo" alt="b__logo" />
         <b className="Brand__text">Tarkov Travel Guide</b>
@@ -12,6 +23,9 @@ function Header() {
         <b className="Clocks__Time">Time</b>
         <b className="Clocks__Icon">Icon</b>
       </div>
+
+      <Dropdown name={"Карты"} items={MAPS} />
+
       <div className="dropdown_Maps">
         <b>Maps</b>
       </div>
@@ -38,7 +52,7 @@ function Header() {
           <b> Profile</b>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
