@@ -24,13 +24,13 @@ export const Dropdown = (props) => {
   };
   // diff map and foreach
   const dropdownEl = items.map(renderDropdownEl);
-  console.log(dropdownEl);
+  // console.log(dropdownEl);
 
   return (
     <div className={styles.dropdown}>
-      <div className={styles.dropdown_btn} onClick={handleOpen}>
+      <button className={styles.dropdown_btn} onClick={handleOpen}>
         {name}
-      </div>
+      </button>
       {open ? (
         <div className={styles.dropdown_container}>{dropdownEl}</div>
       ) : null}

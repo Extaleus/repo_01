@@ -3,18 +3,73 @@
 }
 
 .dropdown_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: 20px;
-  left: 0;
-  background-color: #212121;
-  padding: 5px;
+
+  border-radius: 4px;
+  border-style: none;
+
+  top: 34px;
+  left: 0px;
+
+  min-width: 180px;
+
+  background-color: #000000;
+  /* padding: 5px; */
   color: #fff;
 }
 
 .dropdown_btn {
+  background-color: #000000;
+  border-radius: 4px;
+  border-style: none;
+  color: #fff;
   cursor: pointer;
+  font-size: 16px;
+  /* min-height: 34px; */
+  min-width: 180px;
+  padding: 8px 20px 8px;
+  text-align: center;
 }
+
+.dropdown_btn:hover {
+  opacity: 0.8;
+}
+
 .dropdown_el {
-  border-bottom: 1px solid #515151;
+  margin: 7px;
+  white-space: nowrap;
+
+  background-color: #000000;
+  /* border-bottom: 1px solid; */
+  /* border */
+  color: #fff;
   cursor: pointer;
+  font-size: 15px;
+  padding: 7px 20px 7px;
+  text-align: center;
+
+  /* Если хочу сделать фиксированный бордер для всех элементов */
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown_el:after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #ffffff;
+  width: 50px;
+  transform: translateX(-50%);
+  top: 34px;
+  left: 50%;
+}
+/*-------------------------------------------------------------*/
+
+.dropdown_el:hover {
+  opacity: 0.8;
+
+  /* Костыль */
+  border-bottom: 1px solid rgb(255, 255, 255);
 }

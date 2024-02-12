@@ -15,7 +15,7 @@
 
 .Brand__logo {
   padding: 2%;
-  height: 5vmin;
+  height: 4vmin;
   pointer-events: none;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .Brand__text {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
   white-space: nowrap;
   color: rgb(0, 0, 0);
 }
